@@ -1,0 +1,16 @@
+name: Build&Test
+on: workflow_dispatch
+jobs:
+    Build:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Checkout Repo
+            uses: actions/checkout@v4
+        -   name: Installation Of Java
+            uses: actions/setup-java@v4
+            with:
+                distribution: 'temurin'
+                java-version: '17'
+                cache: 'maven'
+        -   name: Compile
+            run: mvn compile
