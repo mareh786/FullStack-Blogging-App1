@@ -14,8 +14,8 @@ jobs:
                 cache: 'maven'
         # -   name: Compile
         #     run: mvn compile
-        # -   name: test
-        #     run: mvn test
+        -   name: test
+            run: mvn test
         # -   name: Package
         #     run: mvn clean package
 
