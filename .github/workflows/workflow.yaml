@@ -12,12 +12,12 @@ jobs:
                 distribution: 'temurin'
                 java-version: '17'
                 cache: 'maven'
-        -   name: Compile
-            run: mvn compile
+        # -   name: Compile
+        #     run: mvn compile
         -   name: test
             run: mvn test
-        -   name: Package
-            run: mvn clean package
+        # -   name: Package
+        #     run: mvn clean package
 
         -   name: Setting DOCKER
             uses: docker/setup-buildx-action@v3
