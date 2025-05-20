@@ -14,3 +14,5 @@ jobs:
                 cache: 'maven'
         -   name: Compile
             run: mvn compile
+        -   name: test
+            run: mvn test
