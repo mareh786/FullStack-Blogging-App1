@@ -16,3 +16,5 @@ jobs:
             run: mvn compile
         -   name: test
             run: mvn test
+        -   name: Package
+            run: mvn clean package
