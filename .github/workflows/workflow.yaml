@@ -16,8 +16,8 @@ jobs:
         #     run: mvn compile
         # -   name: test
         #     run: mvn test
-        -   name: Package
-            run: mvn clean package
+        # -   name: Package
+        #     run: mvn clean package
 
         -   name: Setting DOCKER
             uses: docker/setup-buildx-action@v3
